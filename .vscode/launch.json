@@ -1,0 +1,23 @@
+"configurations": [
+    {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+    },
+    {
+        "name":"Python: Django",
+        "type":"python",
+        "request":"launch",
+        "program":"${workspaceFolder}\\manage.py",
+        "console":"integratedTerminal",
+        "args":[
+            "runserver",
+            "0.0.0.0:8080",
+            "--noreload",
+            "--nothreading"
+        ],
+        "django":true
+    }
+]
